@@ -208,7 +208,8 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--ouwer-text-color);
-  display: block;
+  display: flex;
+  align-items: center;
   /* padding-top: 32px;
   padding-bottom: 32px;
   display: block; */
@@ -219,13 +220,14 @@ button {
 }
 
 .contact-icon {
-  fill: #757575;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
-.header-link-right:hover .contact-icon,
+/* .header-link-right:hover .contact-icon,
 .header-link-right:focus .contact-icon {
   fill: var(--acent-color);
-}
+} */
 
 /* -------------hero------------- */
 
@@ -238,9 +240,11 @@ button {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px 600px;
+  background-size: cover;
   border: rgba(47, 48, 58, 0.4);
-  bor
+  max-width: 1700px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .hero-content {
@@ -289,15 +293,12 @@ button {
   background-color: var(--background-color);
 }
 
-.second-icon-list {
+/* .second-icon-list {
   display: flex;
   gap: 30px;
-}
+} */
 
 .second-icon-link {
-}
-
-.second-icon-items {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
@@ -307,6 +308,18 @@ button {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.second-icon-items {
+  /* width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; */
 }
 
 .second-section-list {
@@ -419,24 +432,25 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* color: var(--icon-color); */
+  color: var(--icon-color);
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-  cursor: pointer;
+  /* cursor: pointer; */
   background-color: var(--acent-color);
+  color: var(--background-color);
 }
 
 .team-soc-icon {
-  fill: var(--icon-color);
-  /* fill: currentColor; */
+  /* fill: var(--icon-color); */
+  fill: currentColor;
 }
 
-.team-soc-link:hover .team-soc-icon,
+/* .team-soc-link:hover .team-soc-icon,
 .team-soc-link:focus .team-soc-icon {
   fill: var(--background-color);
-}
+} */
 
 /* ---------------clients---------------- */
 
@@ -457,6 +471,21 @@ button {
   gap: 30px;
 }
 .clients-item {
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid #2196f3;
+  color: var(--acent-color);
+  /* cursor: pointer; */
+}
+
+/* .clients-item:hover .team-soc-icon,
+.clients-item:focus .team-soc-icon {
+  cursor: pointer;
+  fill: #2196f3;
+} */
+.clients-link {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -464,24 +493,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--icon-color);
 }
 
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid #2196f3;
-  cursor: pointer;
-}
-
-.clients-item:hover .team-soc-icon,
-.clients-item:focus .team-soc-icon {
-  cursor: pointer;
-  fill: #2196f3;
-}
-.clients-link {
-}
-
-.team-soc-icon {
-  fill: var(--icon-color);
+.team-icon {
+  fill: currentColor;
 }
 /* --------------footer------------- */
 
@@ -638,8 +654,8 @@ button {
   width: calc((100% - 60) / 3);
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-link:hover,
+.project-link:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -652,8 +668,10 @@ button {
   border-top: none;
   background-color: var(--background-color);
 }
-/* .project-link {
-} */
+
+.project-link {
+  display: block;
+}
 
 .project-subtitle {
   font-weight: 700;

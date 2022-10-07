@@ -1,8 +1,5 @@
 html {
   box-sizing: border-box;
-  /* position: relative;
-  width: 1600px;
-  height: 2346px; */
 }
 
 *,
@@ -38,21 +35,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-
-/* :root {
-  --main-title-color: #212121;
-  --mail-font: 'Roboto', sans-serif;
-  --main-background: #ffffff;
-  --accent-color: #2196f3;
-} */
-
-/* body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-  color: #212121;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-} */
 
 h1,
 h2,
@@ -111,11 +93,6 @@ button {
 }
 
 .container {
-  /* margin-left: auto;
-/* margin-right: auto; */
-  /* padding-left: 15px;
-  padding-right: 15px; */
-  /* outline: 2px solid red; */
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -144,19 +121,6 @@ button {
   display: flex;
   gap: 50px;
 }
-
-.header-list .header-item {
-  /* background-color: gold; */
-  /* border: 2px solid tomato; */
-}
-
-/* .header-list .header-item + .header-item {
-  margin-left: 50px;
-} */
-
-/* .header-list .header-item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 .nav {
   display: flex;
@@ -210,9 +174,6 @@ button {
   color: var(--ouwer-text-color);
   display: flex;
   align-items: center;
-  /* padding-top: 32px;
-  padding-bottom: 32px;
-  display: block; */
 }
 
 .header-item {
@@ -224,15 +185,9 @@ button {
   margin-right: 10px;
 }
 
-/* .header-link-right:hover .contact-icon,
-.header-link-right:focus .contact-icon {
-  fill: var(--acent-color);
-} */
-
 /* -------------hero------------- */
 
 .hero {
-  /* background-color: var(--background-footer-color); */
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #c4c4c4;
@@ -242,7 +197,7 @@ button {
   background-position: center;
   background-size: cover;
   border: rgba(47, 48, 58, 0.4);
-  max-width: 1700px;
+  max-width: 1600px;
   height: 600px;
   margin: 0 auto;
 }
@@ -274,8 +229,6 @@ button {
   border-radius: 4px;
   border: 0;
   min-width: 216px;
-  /* width: 216px;
-  height: 50px; */
   padding: 10px 32px;
   text-align: center;
   margin: 0 auto;
@@ -293,11 +246,6 @@ button {
   background-color: var(--background-color);
 }
 
-/* .second-icon-list {
-  display: flex;
-  gap: 30px;
-} */
-
 .second-icon-link {
   width: 270px;
   height: 120px;
@@ -308,18 +256,6 @@ button {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-.second-icon-items {
-  /* width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer; */
 }
 
 .second-section-list {
@@ -349,6 +285,7 @@ button {
 }
 
 /* -----------------third-section------------- */
+
 .third-section {
   background-color: var(--background-color);
   padding-top: 0;
@@ -365,10 +302,6 @@ button {
   display: flex;
   gap: 30px;
 }
-/* .third-section-item {
-}
-.third-section-images {
-} */
 
 /* --------------------fourth-section------------- */
 
@@ -394,8 +327,6 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* .fourth-section-images {
-} */
 .fourth-section-subtitle {
   font-weight: 500;
   font-size: 16px;
@@ -437,20 +368,13 @@ button {
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-  /* cursor: pointer; */
   background-color: var(--acent-color);
   color: var(--background-color);
 }
 
 .team-soc-icon {
-  /* fill: var(--icon-color); */
   fill: currentColor;
 }
-
-/* .team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-  fill: var(--background-color);
-} */
 
 /* ---------------clients---------------- */
 
@@ -477,14 +401,8 @@ button {
 .clients-link:focus {
   border: 1px solid #2196f3;
   color: var(--acent-color);
-  /* cursor: pointer; */
 }
 
-/* .clients-item:hover .team-soc-icon,
-.clients-item:focus .team-soc-icon {
-  cursor: pointer;
-  fill: #2196f3;
-} */
 .clients-link {
   width: 170px;
   height: 92px;
@@ -522,12 +440,6 @@ button {
   color: var(--secondary-text-color);
 }
 
-/* .footer-address {
-} */
-/* .footer-list {
-}
-.footer-item {
-} */
 .footer-link-place {
   font-style: normal;
   font-weight: 400;
@@ -562,9 +474,6 @@ button {
   align-items: baseline;
 }
 
-.footer-an {
-}
-
 .footer-text {
   font-weight: 700;
   line-height: 1.14;
@@ -577,8 +486,7 @@ button {
   justify-content: center;
   gap: 10px;
 }
-.footer-text-item {
-}
+
 .footer-text-link {
   width: 44px;
   height: 44px;
@@ -604,7 +512,6 @@ button {
 
 .project {
   background-color: var(--background-color);
-  /* color: var(--main-text-color); */
 }
 
 .filers-list {
@@ -631,7 +538,6 @@ button {
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  /* min-width: 73px; */
   padding: 6px 22px;
 }
 
